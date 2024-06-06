@@ -197,11 +197,11 @@ img{
   color: var(--p-color);
   letter-spacing: 0.35px;
 }
-.arrival .arrival-info,
+.arrival-data .arrival-info,
 .pro-data .pro-info{
   text-align: center;
 }
-.arrival .arrival-info span,
+.arrival-data .arrival-info span,
 .pro-data .pro-info span{
   font-size: 14px;
   line-height: 22px;
@@ -210,22 +210,22 @@ img{
   color: var(--a-color);
   transition: all 0.5s;
 }
-.arrival .arrival-info span:hover,
+.arrival-data .arrival-info span:hover,
 .pro-data .pro-info span:hover{
   color: var(--black);
 }
-.arrival .arrival-info p,
+.arrival-data .arrival-info p,
 .pro-data .pro-info p{
   font-size: 16px;
   color: var(--h-color);
   letter-spacing: 0.50px;
   transition: all 0.5s;
 }
-.arrival .arrival-info p:hover,
+.arrival-data .arrival-info p:hover,
 .pro-data .pro-info p:hover{
   color: var(--primary);
 }
-.arrival .arrival-info h6,
+.arrival-data .arrival-info h6,
 .pro-data .pro-info h6{
   font-size: 15px;
   color: var(--foot-color);
@@ -552,7 +552,8 @@ footer .footer-bottom p{
 
 /* main */
 
-.main{
+.main,
+.productdata{
   background-color: #f4f4f4;
   text-align: center;
   padding: 30px 0;
@@ -561,21 +562,25 @@ footer .footer-bottom p{
 .main .main-data {
   margin: 0 auto;
 }
-.main h1{
+.main h1,
+.productdata h1{
   color: var(--h-color);
   font-weight: 700;
   font-size: 35px;
   letter-spacing: 0.35px;
   line-height: 47px;
 }
-.main .main-data p{
+.main .main-data p,
+.productdata .main-data p{
   font-size: 14px;
   color: var(--primary);
 }
-.main .main-data .home{
+.main .main-data .home,
+.productdata .main-data .hme{
   color: #999;
 }
-.main .main-data i{
+.main .main-data i,
+.productdata .main-data i{
   padding: 7px 20px;
   font-size: 10px;
   color: var(--p-color);
@@ -595,4 +600,66 @@ footer .footer-bottom p{
   line-height: 22px;
   color: var(--h-color);
   padding-bottom: 10px;
+}
+.shop .arrival-data{
+  margin-bottom: 15px;
+}
+.shop .btn-view{
+  margin-bottom: 30px;
+  padding: 5px 40px;
+  border-radius: 20px;
+  color: var(--white);
+  background-color: var(--primary);
+  border: 1px solid transparent;
+}
+
+/* product page */
+
+.listdata .images-all img{
+  height: 88px;
+  width: 88px;
+  margin-left: 20px;
+}
+.listdata .images-all{
+  margin: 20px 50px;
+}
+.all-data h2{
+  font-size: 24px;
+  font-weight: 400;
+  color: var(--h-color);
+  letter-spacing: 0.35px;
+  margin-bottom: 16px;
+}
+.details span{
+  padding-left: 15px;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 0.35px;
+  line-height: 25px;
+  color: #999999;
+}
+.details .review i{
+  color: #f9d738;
+  font-size: 14px;
+  padding-left: 2px;
+}
+.details .review .def{
+  color: #d3ced2;
+}
+.details .price h3{
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 30px;
+  color: var(--h-color);
+  letter-spacing: 0.35px;
+  padding: 16px 0;
+}
+.details .lorem p{
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0.35px;
+  color: #777777;
+  padding: 20px 0;
+  border-top: 1px solid #e7e7e7;
+  border-bottom: 1px solid #e7e7e7;
 }
